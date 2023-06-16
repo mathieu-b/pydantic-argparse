@@ -9,14 +9,4 @@ The metadata exported are the `title`, `description`, `version`, `author` and
 `license` of the package
 """
 
-
-# Standard
-from importlib import metadata
-
-
-# Retrieve Metadata from Package
-__title__: str = metadata.metadata(__package__)["name"]
-__description__: str = metadata.metadata(__package__)["summary"]
-__version__: str = metadata.metadata(__package__)["version"]
-__author__: str = metadata.metadata(__package__)["author"]
-__license__: str = metadata.metadata(__package__)["license"]
+# removed conflictive code
