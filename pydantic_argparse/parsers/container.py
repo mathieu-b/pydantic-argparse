@@ -13,7 +13,10 @@ import collections.abc
 import enum
 
 # Third-Party
-import pydantic
+try:
+    import pydantic.v1 as pydantic
+except ImportError:
+    import pydantic
 
 # Local
 from pydantic_argparse import utils
